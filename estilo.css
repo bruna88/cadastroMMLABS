@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color:#FFF;
+}
+body { overflow-x: hidden;
+padding-left:-3px;
+}
+.geral{
+    min-height:100%;
+	position:relative;;
+}
+.cima_login_logo{
+	position:absolute;
+	left:10px;
+	top:14px;
+}
+.cima_login{
+	background-color:#132b58;
+	height:120px;
+	font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+.meio_login_info{
+	position:absolute;
+	background-color:#132b58;
+	border-radius: 40px;
+	left: 450px;
+	top:235px;
+	height:180px;
+	width:390px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+	font-size:20px;
+}
+.meio_login_info_caixa{
+	height:28px;
+}
+.meio_login_info_botão{
+	height:28px;
+	width:150px;
+	background-color:#ffffff;
+}
+.meio_login_erro{
+	position:absolute;
+	top:520px;
+	left:370px;
+}
+.cima_adm{
+	background-color:#132b58;
+	height:80px;
+	width:100%;
+}
+
+.cabecalho_cima{
+	margin: 0 auto;
+	width: 50%;
+}
+.cima_adm_texto{
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+.cima_adm_texto_login{
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+	color:#FFF;
+}
+.cima_adm_texto_login2{
+    font-size:22px;
+	color:#b9d0fb;
+}
+.menu_adm_meio{
+	position:absolute;
+	left: 390px;
+}
+.adm_meio{
+	position:relative;
+	width:100%;
+	height:500px;
+	overflow-x: hidden;
+	left:-1px;
+}
+.rodape{
+	position:absolute;
+	background-color:#132b58;
+	bottom:0px;
+	width:100%;
+	height:60px;
+	font-family:Arial;
+	color:#FFF;
+}
+.meio_cadastro_usuario{
+	position:absolute;
+	background-color:#132b58;
+	border-radius: 30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:#FFF;
+	left: 333px;
+	width:600px;
+	top: 210px;
+}
+.meio_login_info_botão_cadastro{
+	height:28px;
+	width:255px;
+	background-color:#ffffff;
+}
+.meio_login_info_caixa_cadusu{
+	height:28px;
+	font:Arial;
+	font-size:19px;
+}
+.meio_gerencia_usuario{
+	position:absolute;
+	background-color:#132b58;
+	border-radius: 20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#FFF;
+	left: 365px;
+}
+.tabela{
+	width:500px;
+}
+
+.navbar-custom {
+    background-color: #132b58;
+    color:#ffffff;
+    border-radius:0;
+    margin-bottom: 0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+
+  footer {
+      background-color: #132b58;
+      color: white;
+      padding: 15px;
+      height: 60px;
+      position:fixed; bottom:0; left: 0; right: 0px;
+  }
+
+  .asterisco{
+  	font-size: 18px;
+  	color: red;
+  }
+.divpj{
+	display:none;
+}
+.divreserva{
+		display:none;
+}
+.placa{
+	text-transform: uppercase;
+}
+
+body.footer-padding {
+    padding-bottom: 70px;
+}
