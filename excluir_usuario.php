@@ -58,7 +58,7 @@ if ((isset($_POST['id_usuario'])) && ($_POST['id_usuario'] != "") && (isset($_GE
 
 
   
-  if($Result1 = mysqli_query($conexao,$deleteSQL) or mysql_error()) {//NO MEU CASO, o único erro que eu sei que pode dar por enquanto é o 1602 (Duplicate do UNIQUE)
+  if($Result1 = mysqli_query($conexao,$deleteSQL) or mysql_error()) {//o único erro que eu sei que pode dar por enquanto é o 1602 (Duplicate do UNIQUE)
   echo "<br><script language='javascript'> history.go(-2); alert('USUÁRIO DELETADO COM SUCESSO!');</script>";//Alerta que já existe e retorna para o form sem enviar os dados
                 exit;
         };        
