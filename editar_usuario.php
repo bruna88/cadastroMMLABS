@@ -51,14 +51,14 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        GetSQLValueString($_POST['senha'], "int"),
                        GetSQLValueString($_POST['id_usuario'], "int"));
                
-//mysql_select_db($database_amtt, $amtt);
+
 
 if($Result1 = mysqli_query($conexao,$updateSQL) or die (mysqli_error())){
   $msg = '<font size="5" color="green">Alterado com Sucesso!</font>'; } else {
   $msg = "ERRO AO CADASTRAR.";  
   }
 }   
-if(mysqli_error($conexao)) {//NO MEU CASO, o único erro que eu sei que pode dar por enquanto é o 1602 (Duplicate do UNIQUE)
+if(mysqli_error($conexao)) {// o único erro que eu sei que pode dar por enquanto é o 1602 (Duplicate do UNIQUE)
   $msg = '<font size="5" color="red">ERRO - ATENÇÃO: Email já cadastrado!</font>'; 
         } else {        
                 
