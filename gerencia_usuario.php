@@ -53,7 +53,7 @@ $startRow_usuario = $pageNum_usuario * $maxRows_usuario;
 $maxRows_usuario = 5;
 $pageNum_usuario = 0;
 if (isset($_GET['pageNum_usuario'])) {
-  $pageNum_usuario_amtt = $_GET['pageNum_usuario'];
+  $pageNum_usuario_contas = $_GET['pageNum_usuario'];
 }
 $startRow_usuario = $pageNum_usuario * $maxRows_usuario;
 
@@ -65,7 +65,7 @@ if (isset($_GET['pageNum_usuario'])) {
 }
 $startRow_usuario = $pageNum_usuario * $maxRows_usuario;
 
-//mysql_select_db($database_amtt, $amtt);
+
 $query_usuario = "SELECT id_usuario, nm_usuario, email, senha FROM usuario ORDER BY id_usuario ASC";
 $query_limit_usuario = sprintf("%s LIMIT %d, %d", $query_usuario, $startRow_usuario, $maxRows_usuario);
 $usuario = mysqli_query($conexao,$query_limit_usuario) or die(mysqli_error());
@@ -81,7 +81,7 @@ $totalPages_usuario = ceil($totalRows_usuario/$maxRows_usuario)-1;
 
 $currentPage = $_SERVER["PHP_SELF"];
 
-$queryString_usuario_amtt = "";
+$queryString_usuario_contas = "";
 if (!empty($_SERVER['QUERY_STRING'])) {
   $params = explode("&", $_SERVER['QUERY_STRING']);
   $newParams = array();
